@@ -37,9 +37,10 @@ const Cast = () => {
                   src={
                     item.profile_path
                       ? `${POSTER_BASE_URL}w200${item.profile_path}`
-                      : ''
+                      : 'https://demofree.sirv.com/nope-not-here.jpg'
                   }
                   alt={item.name}
+                  width={200}
                 />
                 <Styled.Subtitle>{item.name}</Styled.Subtitle>
                 <Styled.Description>

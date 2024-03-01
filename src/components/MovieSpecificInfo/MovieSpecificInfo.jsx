@@ -10,7 +10,7 @@ const MovieSpecificInfo = ({ movieData }) => {
         src={
           movieData.poster_path
             ? `${POSTER_BASE_URL}w200/${movieData.poster_path}`
-            : ''
+            : 'https://demofree.sirv.com/nope-not-here.jpg'
         }
         alt={movieData.title}
       />

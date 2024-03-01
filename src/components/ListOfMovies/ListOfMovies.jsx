@@ -24,8 +24,13 @@ const ListOfMovies = ({ movies }) => {
           >
             <Styled.Div>
               <Styled.Image
-                src={`${POSTER_BASE_URL}w200${movie.poster_path}`}
+                src={
+                  movie.poster_path
+                    ? `${POSTER_BASE_URL}w200/${movie.poster_path}`
+                    : 'https://demofree.sirv.com/nope-not-here.jpg'
+                }
                 alt={movie.title}
+                width={200}
               />
             </Styled.Div>
             <Styled.Title>{movie.title}</Styled.Title>
